@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevDetective</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div class="header">
+        <h1>DevDetective</h1>
+        <div id="mode-change">
+          <p id="mode-text">DARK</p>
+          <img src="" alt="" id="mode-icon" />
+        </div>
+      </div>
+      <div class="main">
+        <div class="search-bar active">
+          <input
+            type="search"
+            name="user-input"
+            id="input"
+            placeholder="Enter a Github username...."
+            required
+          />
+          <div class="error" id="no-results">no-search-results</div>
+          <button class="btn-search" id="submit">Search</button>
+        </div>
+        <div class="profile-container">
+          <div class="profile-header">
+            <img src="" alt="" id="profile-pic" />
+            <div class="profile-info-container">
+              <div id="profile-name-container">
+                <h2 class="profile-name" id="name"></h2>
+                <a href="http://" target="_blank" rel="noopener noreferrer" id="user"></a>
+              </div>
+              <p id="date"></p>
+            </div>
+          </div>
+          <p id="bio"></p>
+          <div class="profile-status-container">
+            <div class="profile-status">
+              <p class="status-title">Repos</p>
+              <p id="repos" class="status-value"></p>
+            </div>
+            <div class="profile-status">
+              <p class="status-title">Followers</p>
+              <p id="followers" class="status-value"></p>
+            </div>
+            <div class="profile-status">
+              <p class="status-title">Following</p>
+              <p id="following" class="status-value"></p>
+            </div>
+          </div>
+          <div class="profile-bottom-container">
+            <div class="profile-info">
+              <img src="./assets/images/location-icon.svg" alt="" class="bottom-icons"/>
+              <p id="location"></p>
+            </div>
+            <div class="profile-info">
+              <img src="./assets/images/website-icon.svg" alt="" class="bottom-icons"/>
+              <a id="page" href="#"></a>
+            </div>
+            <div class="profile-info">
+              <img src="./assets/images/twitter-icon.svg" alt="" class="bottom-icons"/>
+              <p id="twitter"></p>
+            </div>
+            <div class="profile-info">
+              <img src="./assets/images/company-icon.svg" alt="" class="bottom-icons"/>
+              <p id="company"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
